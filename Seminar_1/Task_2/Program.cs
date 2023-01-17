@@ -11,7 +11,11 @@ if (number1 > number2)
 {
     Console.WriteLine($"max = {number1}, min = {number2}");
 }
-else
+else if (number2 > number1)
 {
     Console.WriteLine($"max = {number2}, min = {number1}");
+}
+else
+{
+ Console.WriteLine("Числа одинаковые");   
 }
