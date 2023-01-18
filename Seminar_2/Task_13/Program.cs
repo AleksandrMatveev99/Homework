@@ -4,6 +4,8 @@
 Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number < 0) number = Math.Abs(number);
+
 // Проверка числа
 if (number < 100)
 {
