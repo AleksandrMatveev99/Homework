@@ -4,6 +4,7 @@
 Console.Write("Введите целое трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number < 0) number = Math.Abs(number);
 // Проверка числа и вывод второй цифры
 if (number < 100 | number >= 1000)
 {
