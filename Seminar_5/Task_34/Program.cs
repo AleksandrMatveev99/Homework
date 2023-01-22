@@ -29,7 +29,10 @@ if (sizeArray<1)
     return;
 }
 
-int[] arr = GetRandomArray(sizeArray, 100, 999);
+const int leftGrade = 100;
+const int rightGrade = 999;
+
+int[] arr = GetRandomArray(sizeArray, leftGrade, rightGrade);
 Console.WriteLine(string.Join(" ", arr));
 
 int countNumber = CountEvenNumber(arr);
