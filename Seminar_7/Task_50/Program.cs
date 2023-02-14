@@ -45,5 +45,5 @@ int indexRows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите индекс столбца: ");
 int indexColumns = Convert.ToInt32(Console.ReadLine());
 
-if (indexRows > m || indexColumns > n) Console.WriteLine("Такого числа в массиве нет");
+if (indexRows >= m || indexColumns >= n) Console.WriteLine("Такого числа в массиве нет");
 else Console.WriteLine(array[indexRows, indexColumns]);
